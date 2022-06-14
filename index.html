@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="./images/logo.svg" alt="logo">
+  </div>
+  <div class="splitter">
+    <div class="splitter-input">
+      <label for="bill-amount">Bill</label>
+      <input type="number" id="bill-amount" class="input" placeholder="0">
+      <div class="tip-selector">
+        <label for="tip-select">Slelct Tip %</label>
+        <div class="tip-selector__buttons" id="tip-select">
+          <button class="tip-selector__btn">5%</button>
+          <button class="tip-selector__btn">10%</button>
+          <button class="tip-selector__btn">15%</button>
+          <button class="tip-selector__btn">25%</button>
+          <button class="tip-selector__btn">50%</button>
+          <input type="number" class="tip-selector__custom-tip" placeholder="Custom">
+        </div>
+      </div>
+      <label for="num-of-people">Number of People</label>
+      <input type="number" class="input" id="num-of-prepeole" placeholder="0">
+
+    </div>
+    <div class="splitter-output">
+      <p class="output__name">Tip Amount <span class="output__name-small">/ person</span></p>
+      <span id ="tip-for-person" class="output__amount">0</span>
+      <p class="output__name">Total <span class="output__name-small">/ person</span></p>
+      <span id ="total-for-person" class="output__amount">0</span>
+      <button class="output__btn">Reset</button>
+
+
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
